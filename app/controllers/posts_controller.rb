@@ -1,6 +1,10 @@
 class PostsController < ApplicationController
 
   def index
+    #provide a list of authors to view for the filter controller
+    @authors = Author.all 
+
+    
     @posts = Post.all
   end
 
